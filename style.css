@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+:root {
+  --ex-1-main-color: #ff5656;
+  --ex-2-main-color: #00a508;
+  --ex-3-main-color: #003feb;
+  --ex-4-main-color: #a900d3;
+}
+.rounded {
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.text-large {
+  font-size: 24px;
+}
+.text-medium {
+  font-size: 20px;
+}
+.text-small {
+  font-size: 12px;
+}
+.p-8 {
+  padding: 8px;
+}
+#ex1 {
+  color: var(--ex-1-main-color);
+}
+#ex1 .button {
+  background-color: var(--ex-1-main-color);
+}
+#ex1 .input {
+  border-color: var(--ex-1-main-color);
+}
+#ex2 {
+  color: var(--ex-2-main-color);
+}
+#ex2 .button {
+  background-color: var(--ex-2-main-color);
+}
+#ex2 .input {
+  border-color: var(--ex-2-main-color);
+}
+#ex3 {
+  color: var(--ex-3-main-color);
+}
+#ex3 .button {
+  background-color: var(--ex-3-main-color);
+}
+#ex3 .input {
+  border-color: var(--ex-3-main-color);
+}
+#ex4 {
+  color: var(--ex-4-main-color);
+}
+#ex4 .button {
+  background-color: var(--ex-4-main-color);
+}
+#ex4 .input {
+  border-color: var(--ex-4-main-color);
+}
+.container {
+  width: 100%;
+}
+.title {
+  color: #383bff;
+  text-align: center;
+  margin: 16px;
+}
+.content {
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 16px;
+}
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fde7e7;
+  color: var(--ex-1-main-color);
+  gap: 4px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.card-input {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 4px;
+}
+.card-input .input {
+  outline: none;
+  border: 2px solid;
+}
+.button {
+  max-width: max-content;
+
+  background-color: var(--ex-1-main-color);
+  color: white;
+  border: none;
+}
+@media (min-width: 461px) {
+  .container {
+    padding: 8px 16px;
+  }
+  .text-large {
+    font-size: 28px;
+  }
+  .text-medium {
+    font-size: 24px;
+  }
+  .text-small {
+    font-size: 16px;
+  }
+}
+@media (min-width: 701px) {
+  .container {
+    height: 100vh;
+  }
+  .content {
+    height: 90%;
+  }
+  .card {
+    min-width: 300px;
+    flex: 1;
+    padding: 12px;
+    gap: 16px;
+  }
+}
+@media (min-width: 901px) {
+  .text-large {
+    font-size: 28px;
+  }
+  .text-medium {
+    font-size: 24px;
+  }
+  .text-small {
+    font-size: 18px;
+  }
+  .card {
+    min-width: 420px;
+    flex: 1;
+    padding: 16px;
+  }
+}
